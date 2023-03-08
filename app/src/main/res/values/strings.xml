@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">DicodingCourses</string>
+
+    <string name="course_name">Course Name</string>
+    <string name="course_desc">Description</string>
+    <string name="img_item_content">Image Content</string>
+    <string name="overview">Overview</string>
+
+    <string-array name="course_name">
+        <item>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</item>
+        <item>Pengenalan ke Logika Pemrograman (Programming Logic 101)</item>
+        <item>Belajar Dasar Git dengan \nGitHub</item>
+        <item>Memulai Pemrograman dengan Java</item>
+        <item>Memulai Pemrograman dengan Kotlin</item>
+        <item>Belajar Membuat Aplikasi Android untuk Pemula</item>
+        <item>Belajar Fundamental Aplikasi Android</item>
+        <item>Belajar Pengembangan Aplikasi Android Intermediate</item>
+        <item>Belajar Prinsip Pemrograman SOLID</item>
+        <item>Menjadi Android Developer Expert</item>
+    </string-array>
+
+    <string-array name="course_desc">
+        <item>Pelajari langkah menjadi pengembang software dari tahapan analisis dan perencanaan sampai modifikasi perangkat lunak beserta dokumentasi.</item>
+        <item>Pelajari logika-logika dasar dalam pemrograman dimulai dari jenis-jenis logika pemrograman, gerbang logika, hingga computational thinking.</item>
+        <item>Pelajari cara mengelola data atau kode menggunakan Git dengan GitHub, mulai dari dasar-dasar Git hingga berkolaborasi dengan tim.</item>
+        <item>Belajar bahasa Java buat kamu yang ingin mempelajari konsep Pemrograman Berorientasi Objek (PBO) terpopuler untuk mengembangkan aplikasi.</item>
+        <item>Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.</item>
+        <item>Buat aplikasi pertamamu pada Android Studio dengan mempelajari dasar Activity, Intent, View &amp; ViewGroup, Style &amp; Theme sampai RecyclerView.</item>
+        <item>Pelajari skill Android dengan kurikulum terlengkap yang dibutuhkan perusahaan. Mulai dari UI/UX, background process, API sampai database.</item>
+        <item>Tingkatkan pengalaman pengguna dengan mempelajari Custom View, Animation, Localization, Media, Location, Testing, dan Advanced Database.</item>
+        <item>Pelajari kelima prinsip desain yang merupakan pedoman untuk rancangan kode yang baik pada pemrograman berorientasi objek (OOP).</item>
+        <item>Saatnya menjadi Android Expert dengan belajar Clean Architecture, Reactive, Dependency Injection, Modularization, Performance, dan Security.</item>
+    </string-array>
+
+    <integer-array name="course_photo">
+        <item>@drawable/pengenalan_ke_dasar_pemrograman_basic_programming_101_logo</item>
+        <item>@drawable/pengenalan_ke_logika_pemrograman_programming_logic_101_logo</item>
+        <item>@drawable/belajar_dasar_git_dengan_github_logo</item>
+        <item>@drawable/memulai_pemrograman_dengan_java_logo</item>
+        <item>@drawable/memulai_pemrograman_dengan_kotlin_logo</item>
+        <item>@drawable/belajar_membuat_aplikasi_android_untuk_pemula_logo</item>
+        <item>@drawable/belajar_fundamental_aplikasi_android_logo</item>
+        <item>@drawable/dos_belajar_pengembangan_aplikasi_android_intermediate_logo</item>
+        <item>@drawable/belajar_prinsip_pemrograman_solid_logo</item>
+        <item>@drawable/menjadi_android_developer_expert_logo</item>
+    </integer-array>
 </resources>
