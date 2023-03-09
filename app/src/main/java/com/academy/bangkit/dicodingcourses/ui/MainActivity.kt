@@ -4,9 +4,11 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.academy.bangkit.dicodingcourses.R
 import com.academy.bangkit.dicodingcourses.adapter.ListCourseAdapter
 import com.academy.bangkit.dicodingcourses.databinding.ActivityMainBinding
@@ -14,7 +16,6 @@ import com.academy.bangkit.dicodingcourses.datasource.Course
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rvCourses: RecyclerView
     private val courseList = ArrayList<Course>()
     private lateinit var binding: ActivityMainBinding
 
@@ -23,8 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        rvCourses = binding.rvCourses
-        rvCourses.setHasFixedSize(true)
+        binding.rvCourses.setHasFixedSize(true)
 
         courseList.addAll(getCourses())
         showRecyclerList()
@@ -34,27 +34,44 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.course_name)
         val dataDesc = resources.getStringArray(R.array.course_desc)
         val dataPhoto = resources.obtainTypedArray(R.array.course_photo)
+        val dataSyllabus = resources.getStringArray(R.array.course_syllabus)
         val courseList = ArrayList<Course>()
         for (i in dataName.indices) {
-            val course = Course(dataName[i], dataDesc[i], dataPhoto.getResourceId(i, -1))
+            val course =
+                Course(dataName[i], dataDesc[i], dataPhoto.getResourceId(i, -1), dataSyllabus[i])
             courseList.add(course)
         }
+        dataPhoto.recycle()
         return courseList
     }
 
     private fun showRecyclerList() {
         if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            rvCourses.layoutManager = GridLayoutManager(this, 2)
+            binding.rvCourses.layoutManager = GridLayoutManager(this, 2)
         } else {
-            rvCourses.layoutManager = LinearLayoutManager(this)
+            binding.rvCourses.layoutManager = LinearLayoutManager(this)
         }
         val listCourseAdapter = ListCourseAdapter(courseList) { course ->
             val mIntent = Intent(this@MainActivity, DetailActivity::class.java)
             mIntent.putExtra(DetailActivity.EXTRA_COURSE, course)
             startActivity(mIntent)
         }
-        rvCourses.adapter = listCourseAdapter
+        binding.rvCourses.adapter = listCourseAdapter
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.about_page -> {
+                val mIntent = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(mIntent)
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 }

@@ -34,8 +34,11 @@ class ListCourseAdapter(
                 .load(data.photo)
                 .placeholder(R.drawable.baseline_broken_image_24)
                 .into(binding.ivItemPhoto)
-            binding.tvItemName.text = data.name
-            binding.tvItemDesc.text = data.desc
+
+            binding.apply {
+                tvItemName.text = data.name
+                tvItemDesc.text = data.desc
+            }
 
             itemView.setOnClickListener {
                 onClick(data)

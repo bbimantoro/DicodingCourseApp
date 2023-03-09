@@ -3,6 +3,7 @@ package com.academy.bangkit.dicodingcourses.ui
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.academy.bangkit.dicodingcourses.databinding.ActivityDetailBinding
 import com.academy.bangkit.dicodingcourses.datasource.Course
 
@@ -14,9 +15,10 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val ivItemPhoto = binding.ivItemDetailPhoto
-        val tvItemName = binding.tvItemDetailName
-        val tvItemDesc = binding.tvItemDetailDesc
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = "Detail Course"
+        }
 
         val data = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_COURSE, Course::class.java)
@@ -25,13 +27,23 @@ class DetailActivity : AppCompatActivity() {
             intent.getParcelableExtra(EXTRA_COURSE)
         }
 
-//        tvItemName.text = data?.name.toString()
-//        tvItemDesc.text = data?.desc.toString()
-//        ivItemPhoto.setImageResource(data?.photo!!.toInt())
-
+        if (data != null) {
+            binding.apply {
+                tvItemDetailName.text = data.name
+                tvItemDetailDesc.text = data.desc
+                ivItemDetailPhoto.setImageResource(data.photo)
+                tvSyllabusContent.text = data.syllabus
+            }
+            binding.btnEnroll.setOnClickListener {
+                Toast.makeText(this, "Anda terdaftar di kelas " + data.name, Toast.LENGTH_SHORT)
+                    .show()
+            }
+        }
     }
 
     companion object {
         const val EXTRA_COURSE = "extra_course"
     }
+
+
 }

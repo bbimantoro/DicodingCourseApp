@@ -3,8 +3,17 @@
 
     <string name="course_name">Course Name</string>
     <string name="course_desc">Description</string>
+
+    <string name="about_page">About</string>
+
+    <string name="author">Muhammad Amirul Bimantoro</string>
+    <string name="email">muhammad_s1sisfo2020@mahasiswa.ung.ac.id</string>
+
     <string name="img_item_content">Image Content</string>
     <string name="overview">Overview</string>
+    <string name="syllabus">Silabus</string>
+    <string name="syllabus_content">Daftar Silabus</string>
+    <string name="enroll_now">Belajar Sekarang</string>
 
     <string-array name="course_name">
         <item>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</item>
@@ -44,4 +53,17 @@
         <item>@drawable/belajar_prinsip_pemrograman_solid_logo</item>
         <item>@drawable/menjadi_android_developer_expert_logo</item>
     </integer-array>
+
+    <string-array name="course_syllabus">
+        <item>- Memahami Kebutuhan Aplikasi \n- Perencanaan Modifikasi Aplikasi\n- Mengerti Konsep Dasar Pemrograman\n- Modifikasi Aplikasi Perangkat Lunak\n- Dokumentasi Pemrograman dan Pengembangan Aplikasi Perangkat Lunak\n- Penutup</item>
+        <item>- Pendahuluan\n- Gerbang Logika\n- Pengenalan Dasar Computational Thinking\n- Penutup</item>
+        <item>- Git dan GitHub\n- Dasar Git\n- Studi Kasus Pengalaman Belajar\n- Git Branches\n- Kolaborasi dengan Tim\n- Studi Kasus Kolaborasi dengan Tim\n- GitHub sebagai Portfolio\n- Penutup</item>
+        <item>- Pengenalan Java\n- Java Dasar\n- Control Flow\n- Collection Type\n- Object-Oriented Programming (OOP)\n- Common Class\n- Studi Kasus\n- Penutup</item>
+        <item>- Pendahuluan\n- Persiapan Membangun dan Menjalankan Program Kotlin\n- Kotlin Fundamental\n- Control Flow\n- Data Classes dan Collections\n- Kotlin Functional Programming\n- Kotlin Object-Oriented Programming\n- Kotlin Generics\n- Berkenalan dengan Coroutines\n- Penutup</item>
+        <item>- Pengenalan Android Studio\n- Activity\n- Intent\n- View dan ViewGroup\n- Style dan Theme\n- RecyclerView\n- Penutup</item>
+        <item>- Dasar Pengembangan Aplikasi Android\n- Fragment\n- Navigation\n- Background Thread dan Networking\n- Android Architecture Component\n- Studi Kasus Implementasi Navigation dan API\n- Testing\n- Local Data Persistent\n- Background Task &amp; Scheduler\n- Penutup</item>
+        <item>- Advanced UI\n- Animation\n- Localization &amp; Accessibility\n- Service\n- Media\n- Submission Aplikasi Story App\n- Geo Location\n- Advanced Testing\n- Advanced Database\n- Firebase\n- Submission Akhir Aplikasi Story App</item>
+        <item>- Object-Oriented Programming (OOP)\- Relasi pada OOP\n- Software Design Principle\n- S.O.L.I.D\n- Penutup</item>
+        <item>- Clean Architecture\n- Reactive Programming\n- Dependency Injection\n- Modularization\n- Capstone Proyek Aplikasi Android\n- Continuous Integration\n- Performance\n- Security\n- Build App with Useful Libraries\n- Penutup</item>
+    </string-array>
 </resources>
