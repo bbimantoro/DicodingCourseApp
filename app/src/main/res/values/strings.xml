@@ -42,8 +42,8 @@
     </string-array>
 
     <integer-array name="course_photo">
-        <item>@drawable/pengenalan_ke_dasar_pemrograman_basic_programming_101_logo</item>
-        <item>@drawable/pengenalan_ke_logika_pemrograman_programming_logic_101_logo</item>
+        <item>@drawable/pengenalan_ke_dasar_pemrograman_logo</item>
+        <item>@drawable/memulai_dasar_pemrograman_logo</item>
         <item>@drawable/belajar_dasar_git_dengan_github_logo</item>
         <item>@drawable/memulai_pemrograman_dengan_java_logo</item>
         <item>@drawable/memulai_pemrograman_dengan_kotlin_logo</item>

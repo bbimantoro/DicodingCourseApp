@@ -7,6 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class Course(
     val name: String,
     val desc: String,
+    val syllabus: String,
     val photo: Int,
-    val syllabus: String
 ) : Parcelable

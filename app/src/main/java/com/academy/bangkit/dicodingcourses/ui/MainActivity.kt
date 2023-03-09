@@ -1,11 +1,15 @@
 package com.academy.bangkit.dicodingcourses.ui
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.animation.AnticipateInterpolator
+import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,9 +24,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         binding.rvCourses.setHasFixedSize(true)
 
@@ -38,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         val courseList = ArrayList<Course>()
         for (i in dataName.indices) {
             val course =
-                Course(dataName[i], dataDesc[i], dataPhoto.getResourceId(i, -1), dataSyllabus[i])
+                Course(dataName[i], dataDesc[i], dataSyllabus[i], dataPhoto.getResourceId(i, -1))
             courseList.add(course)
         }
         dataPhoto.recycle()
