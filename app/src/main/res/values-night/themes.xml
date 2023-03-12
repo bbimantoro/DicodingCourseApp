@@ -3,10 +3,10 @@
     <style name="Theme.DicodingCourses" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primary_container</item>
+        <item name="colorPrimaryVariant">@color/on_primary</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondary">@color/on_secondary</item>
         <item name="colorSecondaryVariant">@color/on_secondary</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->

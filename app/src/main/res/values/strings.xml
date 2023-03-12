@@ -4,12 +4,14 @@
     <string name="course_name">Course Name</string>
     <string name="course_desc">Description</string>
 
+    <string name="img_item_content">Image Content</string>
+
     <string name="about_page">About</string>
+    <string name="share_page">Share</string>
 
     <string name="author">Muhammad Amirul Bimantoro</string>
     <string name="email">muhammad_s1sisfo2020@mahasiswa.ung.ac.id</string>
 
-    <string name="img_item_content">Image Content</string>
     <string name="overview">Overview</string>
     <string name="syllabus">Silabus</string>
     <string name="syllabus_content">Daftar Silabus</string>
@@ -18,7 +20,7 @@
     <string-array name="course_name">
         <item>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</item>
         <item>Pengenalan ke Logika Pemrograman (Programming Logic 101)</item>
-        <item>Belajar Dasar Git dengan \nGitHub</item>
+        <item>Belajar Dasar Git dengan GitHub</item>
         <item>Memulai Pemrograman dengan Java</item>
         <item>Memulai Pemrograman dengan Kotlin</item>
         <item>Belajar Membuat Aplikasi Android untuk Pemula</item>
