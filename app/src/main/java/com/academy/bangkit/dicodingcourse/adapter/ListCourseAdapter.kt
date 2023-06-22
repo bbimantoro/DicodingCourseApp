@@ -1,11 +1,11 @@
-package com.academy.bangkit.dicodingcourses.adapter
+package com.academy.bangkit.dicodingcourse.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.academy.bangkit.dicodingcourses.R
-import com.academy.bangkit.dicodingcourses.databinding.ItemRowCourseBinding
-import com.academy.bangkit.dicodingcourses.datasource.Course
+import com.academy.bangkit.dicodingcourse.R
+import com.academy.bangkit.dicodingcourse.databinding.ItemRowCourseBinding
+import com.academy.bangkit.dicodingcourse.datasource.Course
 import com.bumptech.glide.Glide
 
 class ListCourseAdapter(

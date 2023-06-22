@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.academy.bangkit.dicodingcourses'
+    namespace 'com.academy.bangkit.dicodingcourse'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.academy.bangkit.dicodingcourses"
+        applicationId "com.academy.bangkit.dicodingcourse"
         minSdk 21
         targetSdk 33
         versionCode 1

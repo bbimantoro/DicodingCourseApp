@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DicodingCourses</string>
+    <string name="app_name">DicodingCourse</string>
 
     <string name="course_name">Course Name</string>
     <string name="course_desc">Description</string>

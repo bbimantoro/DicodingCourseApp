@@ -1,4 +1,4 @@
-package com.academy.bangkit.dicodingcourses.datasource
+package com.academy.bangkit.dicodingcourse.datasource
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

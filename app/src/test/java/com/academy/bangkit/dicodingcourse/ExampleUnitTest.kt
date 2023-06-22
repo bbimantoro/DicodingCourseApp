@@ -1,4 +1,4 @@
-package com.academy.bangkit.dicodingcourses
+package com.academy.bangkit.dicodingcourse
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.academy.bangkit.dicodingcourses.ui
+package com.academy.bangkit.dicodingcourse.ui
 
 import android.content.Intent
 import android.os.Build
@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.academy.bangkit.dicodingcourses.R
-import com.academy.bangkit.dicodingcourses.databinding.ActivityDetailBinding
-import com.academy.bangkit.dicodingcourses.datasource.Course
+import com.academy.bangkit.dicodingcourse.R
+import com.academy.bangkit.dicodingcourse.databinding.ActivityDetailBinding
+import com.academy.bangkit.dicodingcourse.datasource.Course
 
 class DetailActivity : AppCompatActivity() {
 

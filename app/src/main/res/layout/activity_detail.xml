@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.DetailActivity">
 
-
     <ImageView
         android:id="@+id/iv_item_detail_photo"
         android:layout_width="150dp"
@@ -84,12 +83,12 @@
         android:id="@+id/btn_enroll"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/enroll_now"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_syllabus_content"
-        app:layout_constraintStart_toStartOf="@+id/tv_syllabus_content"
-        app:layout_constraintTop_toBottomOf="@+id/tv_syllabus_content"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

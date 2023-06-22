@@ -1,22 +1,18 @@
-package com.academy.bangkit.dicodingcourses.ui
+package com.academy.bangkit.dicodingcourse.ui
 
-import android.animation.ObjectAnimator
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.view.animation.AnticipateInterpolator
-import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.academy.bangkit.dicodingcourses.R
-import com.academy.bangkit.dicodingcourses.adapter.ListCourseAdapter
-import com.academy.bangkit.dicodingcourses.databinding.ActivityMainBinding
-import com.academy.bangkit.dicodingcourses.datasource.Course
+import com.academy.bangkit.dicodingcourse.R
+import com.academy.bangkit.dicodingcourse.adapter.ListCourseAdapter
+import com.academy.bangkit.dicodingcourse.databinding.ActivityMainBinding
+import com.academy.bangkit.dicodingcourse.datasource.Course
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,17 +63,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
-        return super.onCreateOptionsMenu(menu)
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.about_page -> {
                 val mIntent = Intent(this@MainActivity, AboutActivity::class.java)
                 startActivity(mIntent)
+                true
             }
+            else -> true
         }
-        return super.onOptionsItemSelected(item)
     }
 
 }

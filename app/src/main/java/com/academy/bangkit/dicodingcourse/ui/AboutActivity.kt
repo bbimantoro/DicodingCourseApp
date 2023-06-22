@@ -1,8 +1,8 @@
-package com.academy.bangkit.dicodingcourses.ui
+package com.academy.bangkit.dicodingcourse.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.academy.bangkit.dicodingcourses.databinding.ActivityAboutBinding
+import com.academy.bangkit.dicodingcourse.databinding.ActivityAboutBinding
 
 class AboutActivity : AppCompatActivity() {
 

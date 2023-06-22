@@ -1,4 +1,4 @@
-package com.academy.bangkit.dicodingcourses
+package com.academy.bangkit.dicodingcourse
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
